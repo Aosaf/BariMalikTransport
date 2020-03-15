@@ -25,6 +25,14 @@ namespace BariMalikTransport.Controllers
         {
             return View();
         }
+        public ActionResult ContainerShifting()
+        {
+            return View();
+        }
+        public ActionResult LocalTruckingServices()
+        {
+            return View();
+        }
 
     }
 }

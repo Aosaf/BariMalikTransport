@@ -124,6 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="PageInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -312,6 +313,9 @@
     <Content Include="Views\Services\AutomobileTransportation.cshtml" />
     <Content Include="Views\Services\HouseholdGoods.cshtml" />
     <Content Include="Views\Services\GeneralCargo.cshtml" />
+    <Content Include="Views\Services\ContainerShifting.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Services\LocalTruckingServices.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

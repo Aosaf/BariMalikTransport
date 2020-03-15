@@ -14,6 +14,11 @@ namespace BariMalikTransport
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+               name: "Services",
+               url: "services",
+               defaults: new { controller = "Services", action = "Index", id = UrlParameter.Optional }
+          );
+            routes.MapRoute(
                 name: "AutomobileTransportation",
                 url: "services/automobile-transportation",
                 defaults: new { controller = "Services", action = "AutomobileTransportation", id = UrlParameter.Optional }
@@ -29,6 +34,19 @@ namespace BariMalikTransport
                name: "GeneralCargo",
                url: "services/general-cargo-transportation",
                defaults: new { controller = "Services", action = "GeneralCargo", id = UrlParameter.Optional }
+          );
+
+
+            routes.MapRoute(
+               name: "ContainerShifting",
+               url: "services/container-shifting",
+               defaults: new { controller = "Services", action = "ContainerShifting", id = UrlParameter.Optional }
+          );
+
+            routes.MapRoute(
+               name: "LocalTruckingServices",
+               url: "services/local-trucking-services",
+               defaults: new { controller = "Services", action = "ContainerShifting", id = UrlParameter.Optional }
           );
 
             routes.MapRoute(
