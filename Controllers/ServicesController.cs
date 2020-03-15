@@ -13,5 +13,9 @@ namespace BariMalikTransport.Controllers
         {
             return View();
         }
+        public ActionResult AutomobileTransportation()
+        {
+            return View();
+        }
     }
 }
