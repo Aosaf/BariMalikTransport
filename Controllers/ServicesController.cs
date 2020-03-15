@@ -17,5 +17,14 @@ namespace BariMalikTransport.Controllers
         {
             return View();
         }
+        public ActionResult HouseholdGoods()
+        {
+            return View();
+        }
+        public ActionResult GeneralCargo()
+        {
+            return View();
+        }
+
     }
 }

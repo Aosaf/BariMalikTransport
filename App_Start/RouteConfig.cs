@@ -14,10 +14,22 @@ namespace BariMalikTransport
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "ServicesPage",
+                name: "AutomobileTransportation",
                 url: "services/automobile-transportation",
                 defaults: new { controller = "Services", action = "AutomobileTransportation", id = UrlParameter.Optional }
            );
+
+            routes.MapRoute(
+               name: "HouseholdGoods",
+               url: "services/household-Goods-transportation",
+               defaults: new { controller = "Services", action = "HouseholdGoods", id = UrlParameter.Optional }
+          );
+
+            routes.MapRoute(
+               name: "GeneralCargo",
+               url: "services/general-cargo-transportation",
+               defaults: new { controller = "Services", action = "GeneralCargo", id = UrlParameter.Optional }
+          );
 
             routes.MapRoute(
                 name: "Default",

@@ -150,6 +150,8 @@
     <Content Include="Content\fonts\icomoon\fonts\icomoon.svg" />
     <Content Include="Content\fonts\icomoon\Read Me.txt" />
     <Content Include="Content\fonts\icomoon\style.css" />
+    <Content Include="Content\images\at.jpg" />
+    <Content Include="Content\images\at1.jpg" />
     <Content Include="Content\images\blog_1.jpg" />
     <Content Include="Content\images\blog_2.jpg" />
     <Content Include="Content\images\blog_3.jpg" />
@@ -308,6 +310,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Services\AutomobileTransportation.cshtml" />
+    <Content Include="Views\Services\HouseholdGoods.cshtml" />
+    <Content Include="Views\Services\GeneralCargo.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
