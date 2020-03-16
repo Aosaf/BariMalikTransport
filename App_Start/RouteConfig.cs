@@ -55,6 +55,12 @@ namespace BariMalikTransport
           );
 
             routes.MapRoute(
+               name: "ContactUs",
+               url: "contact-us",
+               defaults: new { controller = "Services", action = "ContactUs", id = UrlParameter.Optional }
+          );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

@@ -37,7 +37,13 @@ namespace BariMalikTransport.Controllers
         {
             return View();
         }
-        
+
+        //Contact Us
+        public ActionResult ContactUs()
+        {
+            return View();
+        }
+
     }
     
 }
