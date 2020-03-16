@@ -36,7 +36,6 @@ namespace BariMalikTransport
                defaults: new { controller = "Services", action = "GeneralCargo", id = UrlParameter.Optional }
           );
 
-
             routes.MapRoute(
                name: "ContainerShifting",
                url: "services/container-shifting",

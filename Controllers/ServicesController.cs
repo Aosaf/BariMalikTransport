@@ -37,7 +37,7 @@ namespace BariMalikTransport.Controllers
         {
             return View();
         }
-
+        
     }
     
 }
