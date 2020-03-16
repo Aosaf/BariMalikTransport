@@ -317,6 +317,7 @@
     <Content Include="Views\Services\ContainerShifting.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="Views\Services\LocalTruckingServices.cshtml" />
+    <Content Include="Views\Services\FullContainerLoad.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

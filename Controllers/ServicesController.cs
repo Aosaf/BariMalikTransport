@@ -33,6 +33,11 @@ namespace BariMalikTransport.Controllers
         {
             return View();
         }
+        public ActionResult FullContainerLoad()
+        {
+            return View();
+        }
 
     }
+    
 }
