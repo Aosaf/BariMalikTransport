@@ -151,6 +151,7 @@
     <Content Include="Content\fonts\icomoon\fonts\icomoon.svg" />
     <Content Include="Content\fonts\icomoon\Read Me.txt" />
     <Content Include="Content\fonts\icomoon\style.css" />
+    <Content Include="Content\images\2.jpg" />
     <Content Include="Content\images\at.jpg" />
     <Content Include="Content\images\at1.jpg" />
     <Content Include="Content\images\blog_1.jpg" />
