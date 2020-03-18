@@ -10,7 +10,11 @@ namespace BariMalikTransport.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            PageInfo pageInfo = new PageInfo();
+            pageInfo.Title = "Bari Malik Goods Transpot";
+            pageInfo.Description = "Local and Nationalwide Goods Transport Solutions all over Pakistan";
+            pageInfo.URL = Url.Action("Index", "Home");
+            return View(pageInfo);
         }
     }
 }

@@ -11,10 +11,18 @@ namespace BariMalikTransport.Controllers
         // GET: Services
         public ActionResult Index()
         {
-            return View();
+            PageInfo pageInfo = new PageInfo();
+            pageInfo.Title = "Our Services";
+            pageInfo.Description = "Local and Nationalwide Goods Transport Solutions all over Pakistan";
+            pageInfo.URL = Url.Action("Index", "Services");
+            return View(pageInfo);
         }
         public ActionResult AutomobileTransportation()
         {
+            PageInfo pageInfo = new PageInfo();
+            pageInfo.Title = "Automobile Transportation";
+            pageInfo.Description = "Local and Nationalwide Goods Transport Solutions all over Pakistan";
+            pageInfo.URL = Url.Action("Index", "Services");
             return View();
         }
         public ActionResult HouseholdGoods()
