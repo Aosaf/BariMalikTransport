@@ -45,7 +45,7 @@ namespace BariMalikTransport
             routes.MapRoute(
                name: "LocalTruckingServices",
                url: "services/local-trucking-services",
-               defaults: new { controller = "Services", action = "ContainerShifting", id = UrlParameter.Optional }
+               defaults: new { controller = "Services", action = "LocalTruckingServices", id = UrlParameter.Optional }
           );
 
             routes.MapRoute(
