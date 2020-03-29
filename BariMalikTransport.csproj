@@ -176,6 +176,7 @@
     <Content Include="Content\images\hero_bg_2.jpg" />
     <Content Include="Content\images\hero_bg_3.jpg" />
     <Content Include="Content\images\hero_bg_4.jpg" />
+    <Content Include="Content\images\homebg.jpg" />
     <Content Include="Content\images\img_1.jpg" />
     <Content Include="Content\images\img_2.jpg" />
     <Content Include="Content\images\img_3.jpg" />
@@ -195,6 +196,7 @@
     <Content Include="Content\images\s2.jpg" />
     <Content Include="Content\images\s3.jpg" />
     <Content Include="Content\images\s4.jpg" />
+    <Content Include="Content\images\sbg.jpg" />
     <Content Include="Content\images\st1.jpg" />
     <Content Include="Content\images\w1.jpg" />
     <Content Include="Content\images\w2.jpg" />
