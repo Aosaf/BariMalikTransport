@@ -188,7 +188,6 @@
     <Content Include="Content\js\aos.js" />
     <Content Include="Content\js\bootstrap-datepicker.min.js" />
     <Content Include="Content\js\bootstrap.min.js" />
-    <Content Include="Content\js\form-submission-handler.js" />
     <Content Include="Content\js\jquery-3.3.1.min.js" />
     <Content Include="Content\js\jquery-migrate-3.0.1.min.js" />
     <Content Include="Content\js\jquery-ui.js" />
