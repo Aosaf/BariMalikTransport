@@ -24,11 +24,12 @@
         </div>
         <div class="row">
             <div class="col-md-7 mb-5">
-                <form id="contactForm" action="https://script.google.com/macros/s/AKfycbygP8-S6Rx9FSmwzqkoXT1EUSqS4uV5p9gHzHbc/exec" method="post" class="p-5 bg-white">
+                <form name="contactForm" id="contactForm" action="https://script.google.com/macros/s/AKfycbygP8-S6Rx9FSmwzqkoXT1EUSqS4uV5p9gHzHbc/exec" method="post" class="p-5 bg-white">
                     <div class="row form-group">
                         <div class="col-md-12 mb-3 mb-md-0">
                             <label class="text-black" for="fname">Name</label>
-                            <input type="text" name="name" class="form-control">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <span id="name" class="text-danger"> </span>
 
                         </div>
                     </div>
@@ -37,7 +38,7 @@
 
                         <div class="col-md-12">
                             <label class="text-black" for="email">Email</label>
-                            <input type="text" name="email" class="form-control">
+                            <input type="email" id="email" name="email" class="form-control">
                         </div>
                     </div>
 
@@ -50,15 +51,8 @@
 
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <input type="submit" data-toggle="modal" data-target="#exampleModalCenter" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
                         </div>
-
-                        @*<div id="successMessage" class="thankyou_message" style="display:none;">
-                            <h3>Thanks for contacting us!</h3>
-                            <h3>
-                                We will get back to you soon!
-                            </h3>
-                        </div>*@
                     </div>
                 </form>
             </div>
@@ -98,21 +92,20 @@
     </div>
 </div>
 <!-- Contact Us End -->
-
-<!-- Modal -->
+<!-- Modal Start-->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
 
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thanks for contacting us</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Thanks for contacting us !</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
 
             <div class="modal-body">
-                Your message has been submitted and we will get back to you soon
+                Your message has been submitted and we will get back to you soon.
             </div>
 
             <div class="modal-footer">
@@ -122,11 +115,12 @@
     </div>
 </div>
 
-
+<!-- Modal Start End-->
 
 
 <script>
     $(document).ready(function () {
+
         $("#contactForm").submit(function (e) {
             submitContactForm();
 
@@ -134,26 +128,31 @@
         });
 
         function submitContactForm() {
-            $.ajax({
-                method: "POST",
-                url: "https://script.google.com/macros/s/AKfycbygP8-S6Rx9FSmwzqkoXT1EUSqS4uV5p9gHzHbc/exec",
-                data: $("#contactForm").serialize()
-            })
+            debugger;
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if (name && email && message) {
+
+                $.ajax({
+                    method: "POST",
+                    url: "https://script.google.com/macros/s/AKfycbygP8-S6Rx9FSmwzqkoXT1EUSqS4uV5p9gHzHbc/exec",
+                    data: $("#contactForm").serialize()
+                })
                 .done(function (response) {
                     if (response.result == "success") {
-                        $("#exampleModalCenter").show();
+                        $("#contactForm").trigger('reset');
+                        $('#exampleModalCenter').modal('show');
                     }
                     else {
                         alert("An error occured while submitting your response. Please try again later.");
                     }
                 });
+            }
+            else {
+                alert('Required filled are empty'); //Validation Message
+            }
         }
     });
 </script>
-
-@*<script>
-
-    $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-</script>*@
