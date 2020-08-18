@@ -178,6 +178,9 @@
     <Content Include="Content\images\logob.png" />
     <Content Include="Content\images\lt1.jpg" />
     <Content Include="Content\images\lt2.jpg" />
+    <Content Include="Content\images\newlogo.png" />
+    <Content Include="Content\images\newlogo3.png" />
+    <Content Include="Content\images\newlogo4.png" />
     <Content Include="Content\images\person_1.jpg" />
     <Content Include="Content\images\person_2.jpg" />
     <Content Include="Content\images\person_3.jpg" />
